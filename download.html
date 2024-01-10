@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download BABUI</title>
+    <style>
+        .background {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            transition: background-color 1s ease-in-out;
+        }
+        
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="background">
+        <div class="text">
+            <h1>Download BABUI 5.0 -</h1>
+            <p>
+                Download BABUI 5.0 -
+                <br>
+                <a href="https://drive.google.com/file/d/1X5Iqpz2in49LeLRmNj3gw7jWBdHd9gGq/view?usp=drive_link">Google Drive</a>
+                <a href="https://workupload.com/file/eU2pZwEgjcW">WorkUpload</a>
+                <a href="https://www.mediafire.com/file/f0jtfpzsbcj6wgj/babui+5.0.rar/file">Mediafire</a>
+                <a href="https://mega.nz/file/YPVDiZQA#ii6eEEtPUoyruMPV1kaNdbZEifPQZmaJ7ln6sC1Cu7s">MEGA</a>
+                <br>
+                <br>
+                <br>
+                Installation Guide:
+                <br>
+                <br>
+                    Extract the Babui 5.0.rar
+                <br>
+                    Open the Babui 5.0 Folder
+                <br>
+                    Open the Babui 5.0.exe File
+                <br>
+                    Press Start in Main Menu
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function getRandomRGB() {
+            var r = Math.floor(Math.random() * 256);
+            var g = Math.floor(Math.random() * 256);
+            var b = Math.floor(Math.random() * 256);
+            return "rgb(" + r + "," + g + "," + b + ")";
+        }
+
+        setInterval(function() {
+            var background = document.querySelector('.background');
+            background.style.backgroundColor = getRandomRGB();
+        }, 1000);
+    </script>
+</body>
+</html>

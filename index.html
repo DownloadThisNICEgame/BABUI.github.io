@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BABUI</title>
+    <style>
+        .background {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            transition: background-color 1s ease-in-out;
+        }
+        
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="background">
+        <div class="text">
+                <h1>BABUI</h1>
+                <a href="devlog.html">BABUI DEVLOG</a>
+                <br>
+                <a href="download.html">BABUI DOWNLOAD</a>
+ 
+        </div>
+    </div>
+
+    <script>
+        function getRandomRGB() {
+            var r = Math.floor(Math.random() * 256);
+            var g = Math.floor(Math.random() * 256);
+            var b = Math.floor(Math.random() * 256);
+            return "rgb(" + r + "," + g + "," + b + ")";
+        }
+
+        setInterval(function() {
+            var background = document.querySelector('.background');
+            background.style.backgroundColor = getRandomRGB();
+        }, 1000);
+    </script>
+</body>
+</html>
